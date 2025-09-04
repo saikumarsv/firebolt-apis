@@ -47,7 +47,7 @@ jobs:
       uses: github/codeql-action/init@v2
       with:
         languages: javascript
-        source-root: dist
+        source-root: src
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v2
       with:
