@@ -41,3 +41,14 @@ jobs:
     - run: npm run validate:compiled
     - run: npm run sdks
     - run: npm run test
+    # CodeQL steps
+    - name: Initialize CodeQL
+      uses: github/codeql-action/init@v2
+      with:
+        languages: javascript
+    - name: Perform CodeQL Analysis
+      uses: github/codeql-action/analyze@v2
+      with:
+        category: security
+        upload: true
+
