@@ -33,6 +33,7 @@ jobs:
       uses: github/codeql-action/init@v2
       with:
         languages: javascript
+        source-root: dist
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v4
       with:
