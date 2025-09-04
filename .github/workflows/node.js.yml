@@ -47,7 +47,7 @@ jobs:
       uses: github/codeql-action/init@v3
       with:
         languages: javascript
-        source-root: src/sdks/core/dist/lib,src/sdks/discovery/dist/lib,src/sdks/manage/dist/lib
+        source-root: src/sdks/core/dist/lib
         queries: +security-and-quality
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v3
